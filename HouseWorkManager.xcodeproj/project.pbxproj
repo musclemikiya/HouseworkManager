@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BDD6FD951E17ACED003D44AB /* bath@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BDD6FD941E17ACED003D44AB /* bath@2x.png */; };
+		BDD6FD981E17AE62003D44AB /* washing_machine@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BDD6FD961E17AE62003D44AB /* washing_machine@2x.png */; };
+		BDD6FD991E17AE62003D44AB /* toilet@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BDD6FD971E17AE62003D44AB /* toilet@2x.png */; };
+		BDD6FD9B1E17AF07003D44AB /* dishwasher@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BDD6FD9A1E17AF07003D44AB /* dishwasher@2x.png */; };
 		BDDF1BCC1E156FEF005FF448 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF1BCB1E156FEF005FF448 /* AppDelegate.swift */; };
-		BDDF1BCE1E156FEF005FF448 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF1BCD1E156FEF005FF448 /* FirstViewController.swift */; };
-		BDDF1BD01E156FEF005FF448 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF1BCF1E156FEF005FF448 /* SecondViewController.swift */; };
+		BDDF1BCE1E156FEF005FF448 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF1BCD1E156FEF005FF448 /* DashboardViewController.swift */; };
+		BDDF1BD01E156FEF005FF448 /* TaskSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF1BCF1E156FEF005FF448 /* TaskSelectionViewController.swift */; };
 		BDDF1BD31E156FEF005FF448 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDDF1BD11E156FEF005FF448 /* Main.storyboard */; };
 		BDDF1BD51E156FEF005FF448 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDDF1BD41E156FEF005FF448 /* Assets.xcassets */; };
 		BDDF1BD81E156FEF005FF448 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDDF1BD61E156FEF005FF448 /* LaunchScreen.storyboard */; };
 		BDDF1BE31E156FEF005FF448 /* HouseWorkManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF1BE21E156FEF005FF448 /* HouseWorkManagerTests.swift */; };
 		BDDF1BEE1E156FEF005FF448 /* HouseWorkManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF1BED1E156FEF005FF448 /* HouseWorkManagerUITests.swift */; };
+		BDDF1BFC1E1662B3005FF448 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDDF1BFB1E1662B3005FF448 /* Dashboard.storyboard */; };
+		BDDF1BFE1E1682D9005FF448 /* Timer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDDF1BFD1E1682D9005FF448 /* Timer.storyboard */; };
+		BDDF1C011E16C1D4005FF448 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF1C001E16C1D4005FF448 /* MainTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +42,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BDD6FD941E17ACED003D44AB /* bath@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bath@2x.png"; sourceTree = "<group>"; };
+		BDD6FD961E17AE62003D44AB /* washing_machine@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "washing_machine@2x.png"; sourceTree = "<group>"; };
+		BDD6FD971E17AE62003D44AB /* toilet@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toilet@2x.png"; sourceTree = "<group>"; };
+		BDD6FD9A1E17AF07003D44AB /* dishwasher@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dishwasher@2x.png"; sourceTree = "<group>"; };
 		BDDF1BC81E156FEF005FF448 /* HouseWorkManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HouseWorkManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDDF1BCB1E156FEF005FF448 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BDDF1BCD1E156FEF005FF448 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		BDDF1BCF1E156FEF005FF448 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		BDDF1BCD1E156FEF005FF448 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		BDDF1BCF1E156FEF005FF448 /* TaskSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskSelectionViewController.swift; sourceTree = "<group>"; };
 		BDDF1BD21E156FEF005FF448 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BDDF1BD41E156FEF005FF448 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDDF1BD71E156FEF005FF448 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +60,9 @@
 		BDDF1BE91E156FEF005FF448 /* HouseWorkManagerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HouseWorkManagerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDDF1BED1E156FEF005FF448 /* HouseWorkManagerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseWorkManagerUITests.swift; sourceTree = "<group>"; };
 		BDDF1BEF1E156FEF005FF448 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDDF1BFB1E1662B3005FF448 /* Dashboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
+		BDDF1BFD1E1682D9005FF448 /* Timer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Timer.storyboard; sourceTree = "<group>"; };
+		BDDF1C001E16C1D4005FF448 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +90,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BDD6FD931E17ACAB003D44AB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BDD6FD941E17ACED003D44AB /* bath@2x.png */,
+				BDD6FD961E17AE62003D44AB /* washing_machine@2x.png */,
+				BDD6FD971E17AE62003D44AB /* toilet@2x.png */,
+				BDD6FD9A1E17AF07003D44AB /* dishwasher@2x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		BDDF1BBF1E156FEE005FF448 = {
 			isa = PBXGroup;
 			children = (
@@ -99,13 +124,15 @@
 		BDDF1BCA1E156FEF005FF448 /* HouseWorkManager */ = {
 			isa = PBXGroup;
 			children = (
+				BDD6FD931E17ACAB003D44AB /* Resources */,
+				BDDF1BFF1E16C19F005FF448 /* Controllers */,
 				BDDF1BCB1E156FEF005FF448 /* AppDelegate.swift */,
-				BDDF1BCD1E156FEF005FF448 /* FirstViewController.swift */,
-				BDDF1BCF1E156FEF005FF448 /* SecondViewController.swift */,
 				BDDF1BD11E156FEF005FF448 /* Main.storyboard */,
 				BDDF1BD41E156FEF005FF448 /* Assets.xcassets */,
 				BDDF1BD61E156FEF005FF448 /* LaunchScreen.storyboard */,
 				BDDF1BD91E156FEF005FF448 /* Info.plist */,
+				BDDF1BFB1E1662B3005FF448 /* Dashboard.storyboard */,
+				BDDF1BFD1E1682D9005FF448 /* Timer.storyboard */,
 			);
 			path = HouseWorkManager;
 			sourceTree = "<group>";
@@ -126,6 +153,16 @@
 				BDDF1BEF1E156FEF005FF448 /* Info.plist */,
 			);
 			path = HouseWorkManagerUITests;
+			sourceTree = "<group>";
+		};
+		BDDF1BFF1E16C19F005FF448 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BDDF1BCD1E156FEF005FF448 /* DashboardViewController.swift */,
+				BDDF1BCF1E156FEF005FF448 /* TaskSelectionViewController.swift */,
+				BDDF1C001E16C1D4005FF448 /* MainTabBarController.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,9 +272,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDD6FD981E17AE62003D44AB /* washing_machine@2x.png in Resources */,
+				BDDF1BFE1E1682D9005FF448 /* Timer.storyboard in Resources */,
 				BDDF1BD81E156FEF005FF448 /* LaunchScreen.storyboard in Resources */,
+				BDD6FD991E17AE62003D44AB /* toilet@2x.png in Resources */,
+				BDD6FD951E17ACED003D44AB /* bath@2x.png in Resources */,
 				BDDF1BD51E156FEF005FF448 /* Assets.xcassets in Resources */,
 				BDDF1BD31E156FEF005FF448 /* Main.storyboard in Resources */,
+				BDDF1BFC1E1662B3005FF448 /* Dashboard.storyboard in Resources */,
+				BDD6FD9B1E17AF07003D44AB /* dishwasher@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,9 +305,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDDF1BD01E156FEF005FF448 /* SecondViewController.swift in Sources */,
+				BDDF1BD01E156FEF005FF448 /* TaskSelectionViewController.swift in Sources */,
 				BDDF1BCC1E156FEF005FF448 /* AppDelegate.swift in Sources */,
-				BDDF1BCE1E156FEF005FF448 /* FirstViewController.swift in Sources */,
+				BDDF1C011E16C1D4005FF448 /* MainTabBarController.swift in Sources */,
+				BDDF1BCE1E156FEF005FF448 /* DashboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,6 +553,7 @@
 				BDDF1BF41E156FEF005FF448 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BDDF1BF51E156FEF005FF448 /* Build configuration list for PBXNativeTarget "HouseWorkManagerTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +562,7 @@
 				BDDF1BF71E156FEF005FF448 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BDDF1BF81E156FEF005FF448 /* Build configuration list for PBXNativeTarget "HouseWorkManagerUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +571,7 @@
 				BDDF1BFA1E156FEF005FF448 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

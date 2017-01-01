@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  DashboardViewController.swift
 //  HouseWorkManager
 //
 //  Created by Mikiya Fukuda on 2016/12/30.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class DashboardViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
