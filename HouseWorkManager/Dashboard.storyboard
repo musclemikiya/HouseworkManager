@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--First-->
+        <!--Home-->
         <scene sceneID="mDs-7M-UNZ">
             <objects>
                 <viewController id="OY2-od-jIO" customClass="DashboardViewController" customModule="HouseWorkManager" customModuleProvider="target" sceneMemberID="viewController">
@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="fnH-jh-kk3"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="home.png" id="fnH-jh-kk3"/>
                     <navigationItem key="navigationItem" id="go3-Y6-dHr"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
@@ -48,6 +48,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
+        <image name="home.png" width="25" height="25"/>
     </resources>
 </document>
