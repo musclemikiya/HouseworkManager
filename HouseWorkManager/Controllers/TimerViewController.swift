@@ -19,6 +19,7 @@ class TimerViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     var startSeconds: Int!
     var countDownTimer: Timer!
     var isPaused = false
+    var isFirstStart = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,40 +46,47 @@ class TimerViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
         minutesLabel.isHidden = !minutesLabel.isHidden
         timerPickerView.isHidden = !timerPickerView.isHidden
         countDownLabel.isHidden = !countDownLabel.isHidden
-        startButton.isUserInteractionEnabled = !startButton.isUserInteractionEnabled
-    }
-
-    @IBAction func startTimer(_ sender: Any) {
-        // pickerとカウントダウンのlabelを切り替え
-        reverseStatus()
-        startSeconds = minutes[timerPickerView.selectedRow(inComponent: 0)] * 60
-        countDownTimer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: { (timer) in
-            if self.isPaused {
-                return
-            }
-            
-            let minutes = String(abs(self.startSeconds) / 60)
-            let seconds = String(format:"%02d" ,abs(self.startSeconds) % 60)
-            
-            var labelString = ""
-            if self.startSeconds < 0 {
-                labelString = "- " + minutes + ":" + seconds
-            } else {
-                labelString = minutes + ":" + seconds
-            }
-            
-            self.countDownLabel.text = labelString
-            self.startSeconds = self.startSeconds - 1
-        })
-        countDownTimer.fire()
     }
     
-    @IBAction func pauseTimer(_ sender: Any) {
-        isPaused = !isPaused
+    private func countDown(timer: Timer) {
+        if self.isPaused {
+            return
+        }
+        
+        // format time
+        let minutes = String(abs(self.startSeconds) / 60)
+        let seconds = String(format:"%02d" ,abs(self.startSeconds) % 60)
+        
+        // update time label
+        var labelString = ""
+        if self.startSeconds < 0 {
+            labelString = "- " + minutes + ":" + seconds
+        } else {
+            labelString = minutes + ":" + seconds
+        }
+        self.countDownLabel.text = labelString
+        self.startSeconds = self.startSeconds - 1
+    }
+
+    @IBAction func startTimer(_ sender: UIButton) {
+        if isFirstStart && !sender.isSelected {
+            // start
+            reverseStatus()
+            startSeconds = minutes[timerPickerView.selectedRow(inComponent: 0)] * 60
+            countDownTimer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: countDown)
+            countDownTimer.fire()
+            isFirstStart = false
+        } else {
+            isPaused = !isPaused
+        }
+        sender.isSelected = !sender.isSelected
     }
     
     @IBAction func reset(_ sender: Any) {
         if countDownTimer.isValid {
+            isPaused = false
+            isFirstStart = true
+            startButton.isSelected = false
             reverseStatus()
             countDownTimer.invalidate()
         }
