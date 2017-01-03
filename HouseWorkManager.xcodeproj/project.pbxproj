@@ -14,6 +14,9 @@
 		BDD6FD9D1E1904DD003D44AB /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD6FD9C1E1904DD003D44AB /* TimerViewController.swift */; };
 		BDD6FD9F1E1A2EDB003D44AB /* stopwatch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BDD6FD9E1E1A2EDB003D44AB /* stopwatch@2x.png */; };
 		BDD6FDA11E1A2F8D003D44AB /* home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BDD6FDA01E1A2F8D003D44AB /* home@2x.png */; };
+		BDD6FDA31E1B84D1003D44AB /* play@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BDD6FDA21E1B84D1003D44AB /* play@2x.png */; };
+		BDD6FDA51E1B85D2003D44AB /* pause@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BDD6FDA41E1B85D2003D44AB /* pause@2x.png */; };
+		BDD6FDA71E1B8B5B003D44AB /* restart@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BDD6FDA61E1B8B5A003D44AB /* restart@2x.png */; };
 		BDDF1BCC1E156FEF005FF448 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF1BCB1E156FEF005FF448 /* AppDelegate.swift */; };
 		BDDF1BCE1E156FEF005FF448 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF1BCD1E156FEF005FF448 /* DashboardViewController.swift */; };
 		BDDF1BD01E156FEF005FF448 /* TaskSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDDF1BCF1E156FEF005FF448 /* TaskSelectionViewController.swift */; };
@@ -52,6 +55,9 @@
 		BDD6FD9C1E1904DD003D44AB /* TimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimerViewController.swift; path = Controllers/TimerViewController.swift; sourceTree = "<group>"; };
 		BDD6FD9E1E1A2EDB003D44AB /* stopwatch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stopwatch@2x.png"; sourceTree = "<group>"; };
 		BDD6FDA01E1A2F8D003D44AB /* home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home@2x.png"; sourceTree = "<group>"; };
+		BDD6FDA21E1B84D1003D44AB /* play@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "play@2x.png"; sourceTree = "<group>"; };
+		BDD6FDA41E1B85D2003D44AB /* pause@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pause@2x.png"; sourceTree = "<group>"; };
+		BDD6FDA61E1B8B5A003D44AB /* restart@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "restart@2x.png"; sourceTree = "<group>"; };
 		BDDF1BC81E156FEF005FF448 /* HouseWorkManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HouseWorkManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDDF1BCB1E156FEF005FF448 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDDF1BCD1E156FEF005FF448 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
@@ -99,12 +105,15 @@
 		BDD6FD931E17ACAB003D44AB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				BDD6FDA21E1B84D1003D44AB /* play@2x.png */,
 				BDD6FD941E17ACED003D44AB /* bath@2x.png */,
 				BDD6FD961E17AE62003D44AB /* washing_machine@2x.png */,
 				BDD6FD971E17AE62003D44AB /* toilet@2x.png */,
 				BDD6FD9A1E17AF07003D44AB /* dishwasher@2x.png */,
 				BDD6FD9E1E1A2EDB003D44AB /* stopwatch@2x.png */,
 				BDD6FDA01E1A2F8D003D44AB /* home@2x.png */,
+				BDD6FDA41E1B85D2003D44AB /* pause@2x.png */,
+				BDD6FDA61E1B8B5A003D44AB /* restart@2x.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -283,10 +292,13 @@
 			files = (
 				BDD6FD9F1E1A2EDB003D44AB /* stopwatch@2x.png in Resources */,
 				BDD6FD981E17AE62003D44AB /* washing_machine@2x.png in Resources */,
+				BDD6FDA31E1B84D1003D44AB /* play@2x.png in Resources */,
 				BDDF1BFE1E1682D9005FF448 /* Timer.storyboard in Resources */,
 				BDDF1BD81E156FEF005FF448 /* LaunchScreen.storyboard in Resources */,
 				BDD6FD991E17AE62003D44AB /* toilet@2x.png in Resources */,
 				BDD6FD951E17ACED003D44AB /* bath@2x.png in Resources */,
+				BDD6FDA51E1B85D2003D44AB /* pause@2x.png in Resources */,
+				BDD6FDA71E1B8B5B003D44AB /* restart@2x.png in Resources */,
 				BDDF1BD51E156FEF005FF448 /* Assets.xcassets in Resources */,
 				BDDF1BD31E156FEF005FF448 /* Main.storyboard in Resources */,
 				BDDF1BFC1E1662B3005FF448 /* Dashboard.storyboard in Resources */,
