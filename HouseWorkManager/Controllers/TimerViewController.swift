@@ -14,6 +14,7 @@ class TimerViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     @IBOutlet weak var minutesLabel: UILabel!
     @IBOutlet weak var countDownLabel: UILabel!
     @IBOutlet weak var startButton: UIButton!
+    @IBOutlet weak var saveButton: UIButton!
     
     let minutes: [Int] = ([Int])(1...59)
     var startSeconds: Int!
@@ -83,12 +84,12 @@ class TimerViewController: UIViewController, UIPickerViewDelegate, UIPickerViewD
     }
     
     @IBAction func reset(_ sender: Any) {
-        if countDownTimer.isValid {
-            isPaused = false
-            isFirstStart = true
-            startButton.isSelected = false
-            reverseStatus()
-            countDownTimer.invalidate()
-        }
+        if !countDownTimer.isValid {return}
+        
+        isPaused = false
+        isFirstStart = true
+        startButton.isSelected = false
+        reverseStatus()
+        countDownTimer.invalidate()
     }
 }
